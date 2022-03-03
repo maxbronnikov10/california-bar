@@ -1,0 +1,264 @@
+@import "_animation.sass"
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	font-family: 'Lumberjack', sans-serif
+
+.container
+	max-width: 1470px
+	margin: 0 auto
+
+.progress
+	position: fixed
+	left: 0
+	top: 0
+	width: 0%
+	height: 7px
+	background-color: red
+
+header
+	position: relative
+	height: 50px
+
+nav
+	position: fixed
+	width: 100%
+	height: 100
+	background: #09090A
+	z-index: 100
+
+.menu
+	justify-content: center
+	display: flex
+	padding: 20px 70px
+	align-items: center
+	gap: 60px
+	&__link
+		color: #ffffff
+		font-weight: 300
+		text-decoration: none
+		font-size: 20px
+		position: relative
+		&::after
+			content: ''
+			background: #fff
+			height: 1px
+			position: absolute
+			bottom: -5px
+			left: 0
+		&:hover
+			&::after
+				animation: .5s slide-in forwards
+
+.main
+	height: 100vh
+	background: url('../img/main.jpg')
+	&__text
+		color: #fff
+		font-weight: 400
+		display: grid
+		width: 100%
+		height: 100vh
+		grid-template: auto / 650px
+		align-content: center
+	&__title
+		padding-top: 50px
+		text-shadow: 0px 17.9167px 23.2917px #990099, 0px 11.6458px 8.95833px rgba(77, 0, 66, 0.7)
+		font-size: 96px
+		text-transform: uppercase
+	&__subtitle
+		display: flex
+		flex-direction: column
+		margin-top: 50px
+		font-size: 48px
+		&-pink
+			color: #bb2670
+
+.event
+	background-color: #000000
+	padding: 140px 0
+	position: relative
+	&__title
+		text-align: center
+		font-size: 64px
+		text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #b908a1
+	&__wrapper
+		display: grid
+		grid-template: minmax(700px, auto) / repeat(3, 410px)
+		align-items: start
+		justify-content: center
+		gap: 50px
+		margin-top: 80px
+	&__card
+		&-item
+			background: #0F1F2F
+			border-radius: 20px
+			height: 100%
+		&-img
+			width: 100%
+		&-title
+			color: #D6258F
+			text-align: center
+			font-size: 24px
+			margin-top: 20px
+		&-date
+			color: #244D55
+			font-size: 18px
+			padding: 10px
+			text-align: right
+		&-text
+			color: #fff
+			font-size: 20px
+			text-align: left
+			margin-top: 20px
+			padding: 0 20px
+	&__arrow
+		width: 287px
+		height: 246px
+		position: absolute
+		left: 10px
+		top: 318px
+
+.novetly
+	padding: 80px 0 40px 0
+	background-color: #020F1C
+	z-index: 1000
+	&__title
+		text-align: center
+		font-size: 64px
+		text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #b908a1
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		margin-top: 133px
+	&__list
+		display: grid
+		grid-template: auto/auto
+		gap: 40px
+		width: 100%
+	&__item
+		position: relative
+		display: grid
+		grid-template: auto / 70% 30%
+		align-items: start
+		&::after
+			content: ""
+			position: absolute
+			background: url('../img/line.png')
+			width: 475px
+			height: 1px
+			left: 35%
+			top: 30px
+	&__name
+		color: #D6258F
+		font-size: 24px
+	&__price
+		color: #D6258F
+		font-size: 24px
+		text-align: right
+	&__content
+		color: #fff
+		font-size: 18px
+		margin-top: 20px
+		width: 400px
+	&__line
+		border-top: 2px dashed #575656
+	&__btn
+		width: 100%
+		height: 60px
+		border-radius: 20px
+		background: none
+		border: 2px solid #9b3a7a
+		font-size: 24px
+		color: #ffffff
+		animation: 1.5s jump infinite
+	&__star
+		position: absolute
+		width: 230px
+		height: 230px
+		left: 1415px
+		top: 2299px
+	&__footer
+		display: flex
+		justify-content: center
+		margin-top: 80px
+
+.disco
+	background: url('../img/disco.jpg') center center/ cover no-repeat
+	height: 590px
+	position: relative
+	&__text
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		text-align: center
+	&__title
+		font-size: 48px
+		color: #D6258F
+	&__subtitle
+		font-size: 36px
+		color: #ffffff
+		margin-top: 35px
+
+.gallery
+	padding: 102px 152px
+	background: url('../img/gallery-bg.jpg')
+	&__title
+		&__title
+			text-align: center
+			font-size: 64px
+			text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #b908a1
+	&__wrapper
+		display: grid
+		grid-template: 400px / repeat(3, 410px)
+		justify-content: center
+		gap: 30px
+		margin-top: 60px
+.map
+	background: url('../img/map.jpg')
+	height: 600px
+
+.footer
+	padding: 50px 50px
+	background-color: #000000
+	height: 440px
+	&__wrapper
+		display: flex
+		justify-content: center
+		text-align: center
+	&__title
+		font-size: 48px
+		color: #D6258F
+	&__address
+		margin-top: 30px
+		font-size: 24px
+		color: #ffffff
+	&__phone
+		margin-top: 20px
+		font-size: 24px
+		color: #ffffff
+	&__text
+		margin-top: 20px
+		font-size: 24px
+		color: #ffffff
+	&__line
+		margin-top: 40px
+		border-top: 2px solid #ffffff
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 6px 6px #E1078B
+	&__socials
+		margin-top: 40px
+		display: flex
+		justify-content: center
+		gap: 50px
+		align-items: center
+	&__link
+		svg
+			animation: 4s purpleShadow infinite
+			fill: #fff
+			background-color: #fff
+			border-radius: 50%
+			width: 60px
+			height: 60px
