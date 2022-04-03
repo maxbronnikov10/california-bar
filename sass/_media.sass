@@ -1,0 +1,158 @@
+
+@media (max-width: 1440px)  
+    .novetly
+        padding: 60px 40px
+    .main__text
+        margin-left: 50px
+    .novetly__star
+        display: none
+    .event__arrow
+        display: none
+@media (max-width: 1200px)
+
+    nav
+        position: relative
+    .main
+        margin-top: 70px
+        &__title
+            font-size: 76px
+            margin-left: 50px
+        &__subtitle
+            margin-left: 50px
+        &__link
+            font-size: 18px
+
+
+
+    .event
+        padding: 70px 0
+        &__title
+            font-size: 48px
+        &__arrow
+            display: none
+    .novetly
+        padding: 40px 0 40px 0
+        &__title
+            font-size: 48px
+        &__star
+            display: none
+        &__wrapper
+            margin-top: 40px
+            flex-wrap: wrap
+            justify-content: center
+        &__list
+            margin: 20px 50px
+        &__item::after
+            width: 400px
+            left: 44%
+            top: 15px
+        &__btn
+            width: 80%
+        &__footer
+            margin-top: 40px
+    .gallery
+        padding: 40px
+        &__title
+            font-size: 49px
+    
+
+@media (max-width: 992px)
+    .menu 
+        padding: 20px
+        gap: 30px
+        &__link
+            font-size: 18px
+    .event
+        padding: 40px
+        &__wrapper
+            margin-top: 60px
+
+    .novetly
+        &__item::after 
+            width: 187px
+            left: 60%
+            top: 15px
+        &__footer
+            margin-top: 20px
+        
+
+@media (max-width: 767px)
+    .novetly
+        &__item::after
+            width: 86px
+        &__img
+            width: 100%
+    .footer
+        padding: 30px 30px
+        height: 390px
+        &__title
+            font-size: 38px
+        &__address
+            font-size: 22px
+            margin-top: 15px
+        &__phone
+            font-size: 22px
+        &__text
+            font-size: 22px
+@media (max-width: 595px)
+    .menu
+        &__link
+            display: none
+    .main
+        &__title
+            font-size: 43px
+            margin-left: 0
+            text-align: center
+        &__subtitle
+            margin-left: 0
+            text-align: center
+            font-size: 40px
+        &__text
+            margin-left: 0
+
+    .event
+        padding: 20px
+        &__title 
+            font-size: 28px
+        &__wrapper
+            margin-top: 30px
+            grid-template: minmax(700px, auto)/repeat(auto-fill, 280px)
+    .novetly
+        padding: 20px 20px
+        &__item::after
+            display: none
+        &__wrapper
+            flex-wrap: wrap
+        &__title
+            font-size: 28px
+        &__list
+            margin: 0
+        &__content
+            width: auto
+        &__btn
+            font-size: 16px
+    .gallery
+        padding: 20px
+        &__wrapper
+            margin-top: 30px
+            grid-template: auto/repeat(auto-fill, 280px)
+        &__item
+            img
+                width: 100%
+        &__title
+            font-size: 28px
+    .footer
+        height: 355px
+        &__title
+            font-size: 30px
+        &__address
+            font-size: 20px
+            margin-top: 15px
+        &__phone
+            font-size: 20px
+        &__text
+            font-size: 20px
+        &__link
+            svg
+                width: 50px
+                height: 50px
